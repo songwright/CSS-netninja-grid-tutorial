@@ -15,12 +15,37 @@
         grid-auto-rows: minmax(100px, auto);
         max-width: 960px;
         margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header"
+        "aside . main main"
+        "nav . main main"
+        "section section section section"
+        "section section section section"
+        "footer footer footer footer";
       }
       #content > *{
         background: #3bbced;
         padding: 30px;
       }
-
+      header{
+        grid-area: header;
+      }
+      main{
+        grid-area: main;
+      }
+      section{
+        grid-area: section;
+      }
+      aside{
+        grid-area: aside;
+      }
+      nav{
+        grid-area: nav;
+      }
+      footer{
+        grid-area: footer;
+      }
     </style>
   </head>
   <body>
